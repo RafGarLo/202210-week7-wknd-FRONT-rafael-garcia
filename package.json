@@ -42,14 +42,14 @@
             "not dead",
             "not op_mini all"
         ],
-        "rules": {
-            "testing-library/no-render-in-setup": "off"
-        },
         "development": [
             "last 1 chrome version",
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "rules": {
+        "testing-library/no-render-in-setup": "off"
     },
     "devDependencies": {
         "eslint-config-prettier": "^8.5.0",
