@@ -7,16 +7,16 @@ import { appStore } from "../components/store/store";
 
 describe("Given AppRoutes component", () => {
     describe("When we render the component And the route is home", () => {
-        beforeEach(() => {
-            // eslint-disable-next-line testing-library/no-render-in-setup
-            render(
-                <Router initialEntries={["/", "/home"]} initialIndex={1}>
+        render(
+            <>
+                <Router initialEntries={["/", "/home"]} initialIndex={0}>
                     <Provider store={appStore}>
                         <AppRoutes />
                     </Provider>
                 </Router>
-            );
-        });
+            </>
+        );
+
         test("Then it should display the Home", () => {
             const element = screen.getByText(/Robot/i);
             expect(element).toBeInTheDocument();
