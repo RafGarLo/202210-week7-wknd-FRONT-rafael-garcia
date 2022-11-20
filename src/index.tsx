@@ -1,18 +1,22 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { appStore } from "./infrastructure/components/store/store";
-import App from "./App";
+
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
+import { MemoryRouter as Router } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import App from "./app/App";
 
-const container = document.getElementById("root")!;
-const root = createRoot(container);
-
+const root = ReactDOM.createRoot(
+    document.getElementById("root") as HTMLElement
+);
 root.render(
-    <Provider store={appStore}>
-        <App />
-    </Provider>
+    <Router>
+        <Provider store={appStore}>
+            <App />
+        </Provider>
+    </Router>
 );
 
 reportWebVitals();

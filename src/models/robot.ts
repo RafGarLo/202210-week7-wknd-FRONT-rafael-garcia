@@ -11,3 +11,13 @@ export type Robot = {
     endurance: number;
     dateOfCreation: string;
 };
+
+export class RobotModel {
+    constructor(
+        public name: string,
+        public img: string,
+        public speed: number,
+        public endurance: number,
+        public dateOfCreation: string
+    ) {}
+}
