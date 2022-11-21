@@ -10,6 +10,7 @@ describe("Given the RobotList component", () => {
                 {
                     id: "223344",
                     name: "Juanito",
+                    img: "",
                     speed: 5,
                     endurance: 4,
                     dateOfCreation: "05/85",

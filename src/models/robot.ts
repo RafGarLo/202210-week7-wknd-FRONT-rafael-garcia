@@ -1,5 +1,6 @@
 export type ProtoRobot = {
     name: string;
+    img?: string;
     speed?: number;
     endurance?: number;
 };
@@ -7,6 +8,7 @@ export type ProtoRobot = {
 export type Robot = {
     id: string;
     name: string;
+    img: string;
     speed: number;
     endurance: number;
     dateOfCreation: string;

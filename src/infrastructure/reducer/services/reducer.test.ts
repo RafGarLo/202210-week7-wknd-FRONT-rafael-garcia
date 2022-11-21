@@ -6,6 +6,7 @@ import { robotReducer } from "./reducer";
 const mockRobot = {
     id: "5",
     name: "Conan",
+    img: "",
     speed: 9,
     endurance: 9,
     dateOfCreation: "15",

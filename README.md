@@ -1,3 +1,16 @@
+CWeek 8 day 1 Challenge 1 - Ampliar Challenge Robots
+TESTEAR
+BACK: Añadir Modelo Usuarios y su endpoint (REGISTER/LOGIN)
+En el login enviar el TOKEN al usuario
+TESTEAR
+BACK: A. Modificar los endpoints de Robots, excepto el getAll, para que solo sean accesibles a usuarios logueados B. Modificar todos los endpoints de Robots, para que solo sean accesibles a usuarios logueados
+TESTEAR
+BACK: Completar los CRUDS de robots
+TESTEAR
+FRONT: Añadir formulario de crear/registrar nuevos usuarios
+FRONT: Añadir formulario de login para los usuarios
+FRONT: Añadir el header de Authorization para poder acceder a los endpoints de robots protegidos en el backend cuando el usuario ha hecho login
+
 Week 7 - Challenge WeekEnd
 Robots
 Tendrás que crear un frontend en React (con Redux) que permita al usuario gestionar un listado con sus robots. El usuario debe poder listar, crear, modificar y borrar robots. Cada robot debe mostrar un nombre, una imagen (URL de internet) y unas características:
